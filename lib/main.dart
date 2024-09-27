@@ -2,6 +2,7 @@ import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_responsive_course/login/login_screen.dart';
+import 'package:flutter_responsive_course/media_query_test/media_query_widget.dart';
 
 void main() {
   runApp(
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
       builder: DevicePreview.appBuilder,
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
-      home: const LoginScreen(),
+      home: const MedaiQueryWidget(),
     );
   }
 }

@@ -8,11 +8,11 @@ class BackgroundImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var screen_size = MediaQuery.of(context).size;
+    var screenSize = MediaQuery.of(context).size;
 
     return Container(
-      height: screen_size.height,
-      width: screen_size.width,
+      height: screenSize.height,
+      width: screenSize.width,
       decoration: const BoxDecoration(
         image: DecorationImage(
           image: AssetImage('assets/image/img.png'),
