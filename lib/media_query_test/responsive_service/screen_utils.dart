@@ -18,12 +18,14 @@ class ScreenUtils {
     _textScaleFactor = MediaQuery.of(context).textScaler;
   }
 
+  // height scale
+
   static double getScaleWidth(double width) {
-    return width * _screenWidth / screenWidth;
+    return width * (_screenWidth / screenWidth);
   }
 
   static double getScaleHeight(double height) {
-    return height * _screenHeight / screenHeight;
+    return height * (_screenHeight / screenHeight);
   }
 
   static double getScaleText(double fontSize) {
