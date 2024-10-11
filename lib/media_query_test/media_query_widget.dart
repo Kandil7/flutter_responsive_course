@@ -11,13 +11,14 @@ class MedaiQueryWidget extends StatelessWidget {
     var screenTextScaler = MediaQuery.textScalerOf(context);
 
     return Scaffold(
+      backgroundColor: Colors.grey[200],
       appBar: AppBar(
         title: const Text('Media Query'),
       ),
-      body: GridView.builder(
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
-        ),
+      body: ListView.builder(
+        // gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        //   crossAxisCount: 2,
+        // ),
         itemCount: datalist.length,
         itemBuilder: (context, index) {
           return Container(

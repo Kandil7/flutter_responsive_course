@@ -10,6 +10,7 @@ class ItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      mouseCursor: MaterialStateMouseCursor.clickable,
       contentPadding: const EdgeInsets.all(10),
       leading: const Icon(Icons.ac_unit),
       title: Text(
