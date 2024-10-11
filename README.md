@@ -64,4 +64,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ### Contact
 
-For any questions or feedback, please contact us at [mohamedkandeal7@example.com](mailto:mohamedkandeal7@example.com).
+For any questions or feedback, please contact us at [mohamedkandeal7@gmail.com](mailto:mohamedkandeal7@gmail.com).
