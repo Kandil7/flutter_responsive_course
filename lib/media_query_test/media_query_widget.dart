@@ -8,7 +8,6 @@ class MedaiQueryWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var datalist = getMediaQueryData(context);
-    var screenTextScaler = MediaQuery.textScalerOf(context);
 
     return Scaffold(
       backgroundColor: Colors.grey[200],

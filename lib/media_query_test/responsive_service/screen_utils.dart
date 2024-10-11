@@ -19,7 +19,7 @@ class ScreenUtils {
     _screenWidth = mediaQuery.size.width;
     _screenHeight = mediaQuery.size.height;
     _screenDensity = mediaQuery.devicePixelRatio;
-    _textScaleFactor = mediaQuery.textScaler ?? TextScaler.noScaling;
+    _textScaleFactor = mediaQuery.textScaler;
 
     return Future.value();
   }
