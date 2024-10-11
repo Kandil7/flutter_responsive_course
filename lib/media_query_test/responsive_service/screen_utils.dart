@@ -11,11 +11,13 @@ class ScreenUtils {
   static double get screenDensity => _screenDensity;
   static TextScaler get textScaleFactor => _textScaleFactor;
 
-  static void init(context) {
+  static Future<void> init(context) {
     _screenWidth = MediaQuery.of(context).size.width;
     _screenHeight = MediaQuery.of(context).size.height;
     _screenDensity = MediaQuery.of(context).devicePixelRatio;
     _textScaleFactor = MediaQuery.of(context).textScaler;
+
+    return Future.value();
   }
 
   // height scale
@@ -34,5 +36,9 @@ class ScreenUtils {
 
   static double getScaleSp(double fontSize) {
     return getScaleText(fontSize);
+  }
+
+  static double getScaleDp(double dp) {
+    return dp * screenDensity;
   }
 }

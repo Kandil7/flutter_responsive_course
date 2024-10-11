@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_responsive_course/media_query_test/responsive_service/size_extention.dart';
 
 class ItemWidget extends StatelessWidget {
   final String title;
@@ -14,10 +15,29 @@ class ItemWidget extends StatelessWidget {
       title: Text(
         title,
         style: TextStyle(
-          fontSize: fontsize,
+          fontSize: fontsize.sp,
           fontWeight: FontWeight.bold,
         ),
       ),
     );
   }
+}
+
+getMediaQueryData(BuildContext context) {
+  var mediaQueryData = MediaQuery.of(context);
+  return [
+    'Size: ${mediaQueryData.size}',
+    'Device Pixel Ratio: ${mediaQueryData.devicePixelRatio}',
+    'Text Scale Factor: ${mediaQueryData.textScaler}',
+    'Platform Brightness: ${mediaQueryData.platformBrightness}',
+    'Padding: ${mediaQueryData.padding}',
+    'View Insets: ${mediaQueryData.viewInsets}',
+    'System Gesture Insets: ${mediaQueryData.systemGestureInsets}',
+    'Always Use 24-Hour Format: ${mediaQueryData.alwaysUse24HourFormat}',
+    'Accessible Navigation: ${mediaQueryData.accessibleNavigation}',
+    'Invert Colors: ${mediaQueryData.invertColors}',
+    'High Contrast: ${mediaQueryData.highContrast}',
+    'Disable Animations: ${mediaQueryData.disableAnimations}',
+    'Bold Text: ${mediaQueryData.boldText}',
+  ];
 }
