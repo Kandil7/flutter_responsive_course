@@ -33,7 +33,7 @@ To get started with this app, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/flutter_responsive_course.git
+    git clone https://github.com/kandil7/flutter_responsive_course.git
     ```
 2. Navigate to the project directory:
     ```bash
