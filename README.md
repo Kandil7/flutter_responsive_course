@@ -4,7 +4,6 @@ A new Flutter project.
 
 ## Getting Started
 
-
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
@@ -32,18 +31,25 @@ This app is designed to help users become proficient in Flutter development by p
 To get started with this app, follow these steps:
 
 1. Clone the repository:
+
     ```bash
     git clone https://github.com/kandil7/flutter_responsive_course.git
     ```
+
 2. Navigate to the project directory:
+
     ```bash
     cd flutter_responsive_course
     ```
+
 3. Install the dependencies:
+
     ```bash
     flutter pub get
     ```
+
 4. Run the app:
+
     ```bash
     flutter run
     ```
